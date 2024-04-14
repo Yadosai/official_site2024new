@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  front:
+    build: ./front
+    working_dir: /app
+    volumes:
+      - ./front:/app
+    ports:
+      - "80:80"
+    tty: true

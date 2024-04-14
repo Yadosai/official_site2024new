@@ -1,9 +1,14 @@
 <template>
-
+    <h1>企画コンポーネント</h1>
+    <item />
 </template>
   
-<script setup lang="ts">
+<script>
+import item from '~/components/mogiten/item'
 
+export default {
+    components: { item },
+}
 </script>
   
 <style scoped>

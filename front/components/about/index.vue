@@ -1,9 +1,8 @@
 <template>
-
+    <h1>aboutコンポーネント</h1>
 </template>
   
-<script setup lang="ts">
-
+<script>
 </script>
   
 <style scoped>

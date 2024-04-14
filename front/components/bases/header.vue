@@ -1,5 +1,5 @@
 <template>
-    <h1>その他ページのitemです。</h1>
+    <h1>ヘッダー</h1>
 </template>
   
 <script>
@@ -9,3 +9,4 @@
 <style scoped>
 
 </style>
+  

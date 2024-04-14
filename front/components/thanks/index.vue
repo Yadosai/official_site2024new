@@ -1,9 +1,14 @@
 <template>
-
+    <h1>協賛ページコンポーネント</h1>
+    <item />
 </template>
   
-<script setup lang="ts">
+<script>
+import item from '~/components/thanks/sponsorItem'
 
+export default {
+    components: { item },
+}
 </script>
   
 <style scoped>

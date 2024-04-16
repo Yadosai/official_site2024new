@@ -14,3 +14,10 @@ export default {
     components: { CommonHeader,CommonFooter },
 }
 </script>
+
+<style>
+body{
+  margin: 0;
+  padding: 0;
+}
+</style>

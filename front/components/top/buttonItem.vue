@@ -2,7 +2,7 @@
     <div class="topPageButtonitemContainer">
         <div class="buttonBackground" :style="buttonBackgroundStyle"></div>
         <nuxt-link :to="navigateTo">
-            <div class="textContainer" :style="textContainerStyle">
+            <div class="ButtonTextContainer" :style="textContainerStyle">
                 <p class="buttonText" :style="textStyle">
                     <span>{{ textHighlightedFirst }}</span>
                     {{ textMiddlePart }}
@@ -63,7 +63,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
 .topPageButtonitemContainer {
     display: flex;
@@ -79,10 +79,10 @@ export default {
     width: 140px;
     height: 140px;
     position: absolute;
-    background: #D00000;
+    background: $primary-color;
 }
 
-.textContainer {
+.ButtonTextContainer {
     display: flex;
     width: 140px;
     height: 140px;
@@ -94,25 +94,21 @@ export default {
 }
 
 .buttonText {
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
+    font-family: $parallel-font-family;
     align-self: stretch;
-    font-family: "Train One";
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     text-align: center;
+    font-size: 20px;
 }
 
 .buttonText span {
-    color: #D00000;
+    color: $primary-color;
     text-align: center;
-    font-family: "Train One";
     font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
-/* 950px以上のデバイスに対するスタイル */
 @media (min-width: 950px) {
   .topPageButtonitemContainer {
       width: 700px;
@@ -124,7 +120,7 @@ export default {
       height: 250px;
   }
 
-  .textContainer {
+  .ButtonTextContainer {
       width: 250px;
       height: 250px;
   }

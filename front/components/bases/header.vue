@@ -1,7 +1,8 @@
 <template>
     <header>
         <div class="headerTitle">
-            <NuxtLink to='top' @click.native="closeMenu" class="headerTitleText">ヤドカリ祭</NuxtLink>
+            <!-- トップページへのリンクのみ、aタグを使ってページ全体を再レンダリングしなければ、footerのlayoutが適応されません。解決法が発見できたら直します。 -->
+            <a to='top' @click.native="closeMenu" class="headerTitleText">ヤドカリ祭</a>
         </div>
         <div id="hamburger" @click="toggleMenu" :class="{ closed: isMenuOpen }">
             <div class="icon">
@@ -13,7 +14,7 @@
         <nav class="sm" v-if="isMenuOpen">
             <ul>
                 <li>
-                    <NuxtLink to="/top" class="menuItem" @click.native="closeMenu">ホーム</NuxtLink>
+                    <a href="/top" class="menuItem" @click.native="closeMenu">ホーム</a>
                 </li>
                 <li>
                     <NuxtLink to="/mogiten" class="menuItem" @click.native="closeMenu">模擬店</NuxtLink>
@@ -44,7 +45,7 @@
         <nav class="pc">
             <ul>
                 <li>
-                    <NuxtLink to="/top" class="menuItem" @click.native="closeMenu">ホーム</NuxtLink>
+                    <a href="/top" class="menuItem" @click.native="closeMenu">ホーム</a>
                 </li>
                 <li>
                     <NuxtLink to="/mogiten" class="menuItem" @click.native="closeMenu">模擬店</NuxtLink>

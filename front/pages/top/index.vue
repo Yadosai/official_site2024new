@@ -4,19 +4,24 @@
     </div>
 </template>
   
-<script>
+<script lang="ts">
 import top from '~/components/top/index.vue'
 
 export default {
-    components: { top },
-    layout: "default",
+    components: { top }
 }
+
+definePageMeta({ 
+    layout: 'darkdefault',
+ })
+
 </script>
   
 <style lang="scss">
 
 #pageContainer {
     background-color: $tertiary-color;
+    margin-bottom: -1px; //これがないと白い線がfooterの上に出る。
 }
 
 </style>

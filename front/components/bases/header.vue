@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="headerTitle">
-            <NuxtLink to="/top">ヤドカリ祭</NuxtLink>
+            <NuxtLink :to="{ path: 'top', hash: '#eyeCatch' }" @click.native="closeMenu">ヤドカリ祭</NuxtLink>
         </div>
         <div id="hamburger" @click="toggleMenu" :class="{ closed: isMenuOpen }">
             <div class="icon">
@@ -13,61 +13,62 @@
         <nav class="sm" v-if="isMenuOpen">
             <ul>
                 <li>
-                    <NuxtLink to="/mogiten" class="menuItem">模擬店</NuxtLink>
+                    <NuxtLink to="/mogiten" class="menuItem" @click.native="closeMenu">模擬店</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/kikaku" class="menuItem">企画</NuxtLink>
+                    <NuxtLink to="/kikaku" class="menuItem" @click.native="closeMenu">企画</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/sinkan" class="menuItem">新歓</NuxtLink>
+                    <NuxtLink to="/sinkan" class="menuItem" @click.native="closeMenu">新歓</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/thanks" class="menuItem">協賛団体様</NuxtLink>
+                    <NuxtLink to="/thanks" class="menuItem" @click.native="closeMenu">協賛団体様</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/performer" class="menuItem">出演団体</NuxtLink>
+                    <NuxtLink to="/performer" class="menuItem" @click.native="closeMenu">出演団体</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/about" class="menuItem">about</NuxtLink>
+                    <NuxtLink to="/about" class="menuItem" @click.native="closeMenu">about</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/QA" class="menuItem">Q&A</NuxtLink>
+                    <NuxtLink to="/QA" class="menuItem" @click.native="closeMenu">Q&A</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/other" class="menuItem">その他</NuxtLink>
+                    <NuxtLink to="/other" class="menuItem" @click.native="closeMenu">その他</NuxtLink>
                 </li>
             </ul>
         </nav>
         <nav class="pc">
             <ul>
                 <li>
-                    <NuxtLink to="/mogiten" class="menuItem">模擬店</NuxtLink>
+                    <NuxtLink to="/mogiten" class="menuItem" @click.native="closeMenu">模擬店</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/kikaku" class="menuItem">企画</NuxtLink>
+                    <NuxtLink to="/kikaku" class="menuItem" @click.native="closeMenu">企画</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/sinkan" class="menuItem">新歓</NuxtLink>
+                    <NuxtLink to="/sinkan" class="menuItem" @click.native="closeMenu">新歓</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/thanks" class="menuItem">協賛団体様</NuxtLink>
+                    <NuxtLink to="/thanks" class="menuItem" @click.native="closeMenu">協賛団体様</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/performer" class="menuItem">出演団体</NuxtLink>
+                    <NuxtLink to="/performer" class="menuItem" @click.native="closeMenu">出演団体</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/about" class="menuItem">about</NuxtLink>
+                    <NuxtLink to="/about" class="menuItem" @click.native="closeMenu">about</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/QA" class="menuItem">Q&A</NuxtLink>
+                    <NuxtLink to="/QA" class="menuItem" @click.native="closeMenu">Q&A</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/other" class="menuItem">その他</NuxtLink>
+                    <NuxtLink to="/other" class="menuItem" @click.native="closeMenu">その他</NuxtLink>
                 </li>
             </ul>
         </nav>
     </header>
 </template>
+
 
 <script>
 import { ref } from 'vue';
@@ -80,10 +81,16 @@ export default {
             isMenuOpen.value = !isMenuOpen.value;
         };
 
-        return { isMenuOpen, toggleMenu };
+        const closeMenu = () => {
+            isMenuOpen.value = false;
+        };
+
+        return { isMenuOpen, toggleMenu, closeMenu };
     }
 }
 </script>
+
+
 
 <style lang="scss">
 header {
@@ -110,7 +117,14 @@ header {
 
 nav.pc,
 nav.sm {
-    margin-left: auto;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    max-height: calc(100vh - 60px);
+    overflow-y: auto; 
 }
 
 ul {
@@ -126,7 +140,7 @@ nav.sm ul {
 }
 
 .menuItem {
-    color: #ffffff;
+    color: $secondary-color;
     text-decoration: none;
     display: block;
     line-height: 60px;
@@ -162,7 +176,7 @@ nav.sm {
     left: 15px;
     width: 30px;
     height: 4px;
-    background-color: white;
+    background-color: $secondary-color;
     border-radius: 8px;
     transition: all 0.75s ease;
 }

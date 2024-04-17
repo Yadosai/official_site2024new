@@ -2,7 +2,7 @@
     <header>
         <div class="headerTitle">
             <!-- トップページへのリンクのみ、aタグを使ってページ全体を再レンダリングしなければ、footerのlayoutが適応されません。解決法が発見できたら直します。 -->
-            <a to='top' @click.native="closeMenu" class="headerTitleText">ヤドカリ祭</a>
+            <a href='top' @click.native="closeMenu" class="headerTitleText">ヤドカリ祭</a>
         </div>
         <div id="hamburger" @click="toggleMenu" :class="{ closed: isMenuOpen }">
             <div class="icon">

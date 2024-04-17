@@ -1,9 +1,9 @@
 <template>
-    <div>
-      <common-header />
-      <slot />
-      <common-footer />
-    </div>
+  <common-header />
+  <div class="page">
+    <slot />
+  </div>
+  <common-footer />
 </template>
 
 <script>
@@ -11,13 +11,17 @@ import CommonHeader from '~/components/bases/header'
 import CommonFooter from '~/components/bases/footer'
 
 export default {
-    components: { CommonHeader,CommonFooter },
+  components: { CommonHeader, CommonFooter },
 }
 </script>
 
 <style>
-body{
+body {
   margin: 0;
   padding: 0;
+}
+
+.page {
+  margin-top: 60px;
 }
 </style>

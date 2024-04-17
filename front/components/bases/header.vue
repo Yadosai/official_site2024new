@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="headerTitle">
-            <NuxtLink :to="{ path: 'top', hash: '#eyeCatch' }" @click.native="closeMenu">ヤドカリ祭</NuxtLink>
+            <NuxtLink to='top' @click.native="closeMenu" class="headerTitleText">ヤドカリ祭</NuxtLink>
         </div>
         <div id="hamburger" @click="toggleMenu" :class="{ closed: isMenuOpen }">
             <div class="icon">
@@ -12,6 +12,9 @@
         </div>
         <nav class="sm" v-if="isMenuOpen">
             <ul>
+                <li>
+                    <NuxtLink to="/top" class="menuItem" @click.native="closeMenu">ホーム</NuxtLink>
+                </li>
                 <li>
                     <NuxtLink to="/mogiten" class="menuItem" @click.native="closeMenu">模擬店</NuxtLink>
                 </li>
@@ -40,6 +43,9 @@
         </nav>
         <nav class="pc">
             <ul>
+                <li>
+                    <NuxtLink to="/top" class="menuItem" @click.native="closeMenu">ホーム</NuxtLink>
+                </li>
                 <li>
                     <NuxtLink to="/mogiten" class="menuItem" @click.native="closeMenu">模擬店</NuxtLink>
                 </li>
@@ -105,7 +111,7 @@ header {
     align-items: center;
 }
 
-.headerTitle a {
+.headerTitleText {
     font-family: map-get($font-styles, family);
     font-style: map-get($font-styles, style);
     font-weight: map-get($font-styles, weight);
@@ -115,9 +121,7 @@ header {
     font-size: 25px;
 }
 
-nav.pc,
 nav.sm {
-    display: none;
     position: absolute;
     top: 60px;
     left: 0;
@@ -125,6 +129,12 @@ nav.sm {
     background-color: rgba(34, 49, 52, 0.9);
     max-height: calc(100vh - 60px);
     overflow-y: auto; 
+}
+
+nav.pc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 ul {
@@ -169,6 +179,10 @@ nav.sm {
     height: 60px;
     width: 60px;
     margin-left: auto;
+}
+
+nav.pc, nav.sm {
+  margin-left: auto;
 }
 
 .icon span {

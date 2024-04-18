@@ -67,6 +67,13 @@
 }
 
 @media (min-width: 950px) {
+
+    .InjectionItem p,
+    #SinkanEyeCatch p {
+        font-size: 40px;
+    }
+
+
     .InjectionItem {
         width: 650px;
         height: auto;
@@ -76,5 +83,6 @@
         width: 650px;
         height: 740px;
     }
+
 }
 </style>

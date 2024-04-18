@@ -1,5 +1,4 @@
 <template>
-    <h1>新歓ページ</h1>
     <sinkan />
 </template>
   

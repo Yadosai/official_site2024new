@@ -1,13 +1,19 @@
 <template>
     <h1>協賛ページコンポーネント</h1>
-    <item />
+    <sponsorItem sponsorUrl="" sponsorLogoUrl="~@/assets/img/sponsor/seirokuya.png" :sponsorDescript="sponsorDescript"  />
 </template>
   
 <script>
-import item from '~/components/thanks/sponsorItem'
+import sponsorItem from '~/components/thanks/sponsorItem'
+
 
 export default {
-    components: { item },
+    components: { sponsorItem },
+    data() {
+        return {
+            sponsorDescript: "我々は清六家。\n日本一のラーメン屋..."
+        };
+    }
 }
 </script>
   

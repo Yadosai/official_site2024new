@@ -1,10 +1,10 @@
 <template>
     <div class="sponsor">
-        <a :href="sponsorUrl" target="_blank">
+        <a :href="sponsorUrl" target="_blank" class="no-underline">
             <div class="sponsor-logo-container">
-                <img :src="sponsorLogoUrl" :alt="`sponsor Logo`" class="sponsor-logo"/>
+                <img :src="sponsorLogoUrl" :alt="'sponsor Logo'" class="sponsor-logo"/>
             </div>
-            <div class="sponsor-descript">{{ sponsordescript }}</div>
+            <div class="sponsor-descript">{{ sponsorDescript }}</div>
         </a>
     </div>
 </template>
@@ -12,10 +12,9 @@
 <script>
 export default {
     props: {
-        sponsorLogoUrl: String,
-        sponsorDescript: String,
         sponsorUrl: String,
-        }
+        sponsorLogoUrl: String,
+        sponsorDescript: String
     }
 }
 </script>
@@ -27,7 +26,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255,255,255,0); /* 背景色を設定、オプション */
+    background-color: rgba(255,255,255,1); /* 背景色を設定、オプション */
 }
 
 .sponsor-logo-container {
@@ -48,5 +47,11 @@ export default {
     font-size: 14px;
     width: 100%; /* 名前部分も幅いっぱいに展開 */
     height: auto; /* 高さは自動で */
+    white-space: pre-wrap; /* 改行と空白を保持 */
+}
+
+.no-underline {
+    text-decoration: none; /* リンクの下線を消す */
+    color: black; /* リンクの色を黒に設定 */
 }
 </style>

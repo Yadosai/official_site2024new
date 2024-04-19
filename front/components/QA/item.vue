@@ -1,11 +1,122 @@
 <template>
-    <h1>QAページのitemです。</h1>
+    <div class="qacontainer">
+        <div class="question">
+            <div class="q-mark">
+                <div class="circle red"></div>
+                <div class="q">Q</div>
+            </div>
+            <div class="q-text">{{ question }}</div>
+        </div>
+        <div class="answer">
+            <div class="a-mark">
+                <div class="circle white"></div>
+                <div class="a">A</div>
+            </div>
+            <div class="a-text">{{ answer }}</div>
+        </div>
+    </div>
 </template>
   
 <script>
-
+export default {
+    props: {
+        question: String,
+        answer: String
+    }
+}
 </script>
   
-<style scoped>
+<style lang="scss">
+.qacontainer {
+    margin: 0;
+    width: 344px;
+    height: 100%;
+    background-color: #cbcbcb;
+    border-radius: 8px;
+    border: #d10000 1px solid;
+    padding: 15px;
+}
+.question {
+    width: 330px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.answer {
+    width: 330px;
+    display: flex;
+}
+.q-mark {
+    width: 40px;
+    height: 43px;
+    position: relative;
+    z-index: 4 ;
+    margin-right: 10px;
+}
 
+.a-mark {
+    width: 40px;
+    height: 43px;
+    position: relative;
+    z-index: 4 ;
+    margin-right: 10px;
+}
+
+.q {
+    font-family: map-get($font-styles, family);
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 30px;
+    color: #ffffff;
+    -webkit-text-stroke-color: #d10000;
+    -webkit-text-stroke-width: 1px;
+    z-index: 3;
+}
+
+.a {
+    font-family: map-get($font-styles, family);
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 30px;
+    color: #d10000;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: 1px;
+    z-index: 3;
+
+}
+
+.q-text {
+    width: 260px;
+    height: 100%;
+    font-size: 20px;
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
+    font-family: map-get($font-styles, family);
+}
+
+.a-text {
+    width: 260px;
+    height: 100%;
+    font-size: 16px;
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
+    font-family: map-get($font-styles, family);
+}
+.circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red {
+    background-color: #d10000;
+}
+.white {
+    background-color: white;
+    border: #d10000 1px solid;
+}
 </style>

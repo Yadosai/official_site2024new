@@ -12,7 +12,7 @@ export default {
 }
 
 definePageMeta({ 
-    layout: 'darkdefault',
+    layout: 'default',
  })
 
 </script>

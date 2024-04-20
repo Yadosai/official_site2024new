@@ -13,7 +13,7 @@
                     </a>
                 </div>
                 <div class="schedule">
-                    <img src="~/assets/img/mogiten/map.png">
+                    <img src="~/assets/img/mogiten/mapIcon.png">
                     <div class="dates">
                         <p>{{ holdingTime_1 }}</p>
                         <p>{{ holdingTime_2 }}</p>
@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .mogitenItem {
     display: flex;
     position: relative;
@@ -87,7 +87,6 @@ export default {
     font-style: map-get($font-styles, style);
     font-weight: map-get($font-styles, weight);
     line-height: map-get($font-styles, line-height);
-    font-size: 24px;
     margin: 0;
 }
 

@@ -1,5 +1,4 @@
 <template>
-    <h1>模擬店ページ</h1>
     <mogiten />
 </template>
   

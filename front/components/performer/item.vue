@@ -54,7 +54,7 @@ export default {
 };
 </script>
   
-<style scoped>
+<style scoped lang="scss">
 a {
     color: inherit;
     text-decoration: none;
@@ -74,8 +74,8 @@ p {
     align-items: center;
 
     border-radius: 8px;
-    border: 1px solid #D00000;
-    background: #CBCBCB;
+    border: 1px solid $primary-color;
+    background: $quaternary-color;
 }
 
 .performerHeader {
@@ -86,16 +86,16 @@ p {
     align-self: stretch;
 
     border-radius: 8px 8px 0px 0px;
-    background: #D00000;
+    background: $primary-color;
 }
 
 .performerName {
-    color: #FFF;
+    color: $secondary-color;
     text-align: center;
-    font-family: "Kaisei HarunoUmi";
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-family: map-get($font-styles, family);
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
 }
 
 .contents {
@@ -117,24 +117,22 @@ p {
     width: 264px;
     height: 27px;
 
-    color: #000;
-    font-family: "Kaisei HarunoUmi";
     font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-family: map-get($font-styles, family);
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
 }
 
 .mogitenName {
     width: 264px;
     height: 27px;
-
-    color: #000;
-    font-family: "Kaisei HarunoUmi";
     font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+
+    font-family: map-get($font-styles, family);
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
 }
 
 .SNS {
@@ -152,13 +150,14 @@ p {
 }
 
 .SNSID {
-    color: #000;
     text-align: center;
-    font-family: "Kaisei HarunoUmi";
     font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    
+    font-family: map-get($font-styles, family);
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
+    background: $quaternary-color;
 }
 
 .icon {

@@ -27,22 +27,22 @@
 
 <script>
 export default {
-  props: {
-    mogitenName: String,
-    mogitenFontSize: {
-      type: String,
-      default: '24px'
-    },
-    organizationName: String,
-    mogitenIntroduction: String,
-    mogitenId: String,
-    holdingTime_1: String,
-    holdingTime_2: String,
-  }
+    props: {
+        mogitenName: String,
+        mogitenFontSize: {
+            type: String,
+            default: '24px'
+        },
+        organizationName: String,
+        mogitenIntroduction: String,
+        mogitenId: String,
+        holdingTime_1: String,
+        holdingTime_2: String,
+    }
 }
 </script>
 
-<style lang="scss" >
+<style lang="scss">
 .mogitenItem {
     display: flex;
     position: relative;

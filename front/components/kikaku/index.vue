@@ -7,8 +7,8 @@
   
 <script>
 import item from '~/components/kikaku/item'
-import timeTable_1 from '~/components/kikaku/timeTable_1'
-import timeTable_2 from '~/components/kikaku/timeTable_2'
+import timeTable_1 from '~/components/kikaku/timetable_1'
+import timeTable_2 from '~/components/kikaku/timetable_2'
 
 export default {
     components: { item,timeTable_1,timeTable_2 },

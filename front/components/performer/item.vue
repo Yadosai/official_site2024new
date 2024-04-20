@@ -157,7 +157,6 @@ p {
     font-style: map-get($font-styles, style);
     font-weight: map-get($font-styles, weight);
     line-height: map-get($font-styles, line-height);
-    background: $quaternary-color;
 }
 
 .icon {

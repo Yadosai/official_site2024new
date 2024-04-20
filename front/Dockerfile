@@ -4,7 +4,15 @@ RUN mkdir src
 
 RUN apk update && \
     apk upgrade && \
-    apk add git && \
-    npm install -g npm@latest nuxi nuxt3
+    apk add --no-cache git
 
-CMD ["sh", "-c", "PORT=80 yarn dev"]
+RUN yarn global add nuxt
+
+COPY . .
+
+RUN yarn install
+
+RUN npm install
+EXPOSE 3000
+
+CMD ["yarn", "dev"]

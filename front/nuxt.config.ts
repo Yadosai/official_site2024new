@@ -11,7 +11,7 @@ export default ({
     }
   },
   modules: ["@nuxtjs/google-fonts"],
- 
+
   googleFonts: {
     families: {
       'Train+One': true,

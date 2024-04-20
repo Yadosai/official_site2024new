@@ -1,13 +1,22 @@
 # official_site2024new
 
-cloneした後は、以下のコマンドを打って必要なライブラリとかをダウンロードしてください。
+```sh
+git clone git@github.com:Yadosai/official_site2024new.git
+docker compose up -d
+```
+http://localhost:3000
+にアクセスすると確認できます。
 
-docker-compose up -d
+うまく行かない場合は
 
-docker-compose exec front ash 
+```sh
+docker compose up --build -d
 
-npm install 
+```
+でビルドし直してみてください。
 
-exit
+終了時
+```sh
+docker compose down
+```
 
-docker-compose up -d

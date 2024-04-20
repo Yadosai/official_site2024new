@@ -19,5 +19,8 @@
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "3.0.0-1"
+  },
+  "resolutions": {
+    "rollup": "npm:@rollup/wasm-node"
   }
 }

@@ -1,5 +1,4 @@
 <template>
-    <h1>その他ページ</h1>
     <other />
 </template>
   

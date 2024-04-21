@@ -1,9 +1,11 @@
 <template>
     <div class="sponsor">
         <a :href="sponsorUrl" target="_blank" class="no-underline">
-            <div class="sponsor-logo-container">
-                <img :src="sponsorLogoUrl" :alt="'sponsor Logo'" class="sponsor-logo"/>
-            </div>
+            <center>
+                <div class="sponsor-logo-container">
+                    <img :src=sponsorLogoUrl :alt="'sponsor Logo'" class="sponsor-logo"/>
+                </div>
+            </center>
             <div class="sponsor-descript">{{ sponsorDescript }}</div>
         </a>
     </div>
@@ -32,9 +34,6 @@ export default {
 .sponsor-logo-container {
     width: 101px; /* コンテナの幅を100%に設定 */
     height: 70px; /* コンテナの高さも親要素に合わせて100%に設定 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .sponsor-logo {

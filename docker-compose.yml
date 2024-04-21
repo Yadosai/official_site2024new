@@ -1,4 +1,3 @@
-version: '3.9'
 services:
   front:
     build: ./front
@@ -6,5 +5,5 @@ services:
     volumes:
       - ./front:/app
     ports:
-      - "80:80"
+      - "3000:3000"
     tty: true

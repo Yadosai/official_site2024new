@@ -1,7 +1,7 @@
 <template>
     <div class="otherItem">
         <div class="otherHeader">
-            <p :style="{ fontSize: itemFontSize }">クラウドファンディング</p>
+            <p :style="{ fontSize: itemFontSize }">{{ itemTitle }}</p>
         </div>
         <div class="otherContent">
             <ul>

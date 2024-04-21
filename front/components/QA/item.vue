@@ -62,6 +62,9 @@ export default {
 }
 
 .q {
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
     font-family: map-get($font-styles, family);
     position: absolute;
     top: 0;
@@ -69,11 +72,14 @@ export default {
     font-size: 30px;
     color: #ffffff;
     -webkit-text-stroke-color: #d10000;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.5px;
     z-index: 3;
 }
 
 .a {
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
     font-family: map-get($font-styles, family);
     position: absolute;
     top: 0;
@@ -81,7 +87,7 @@ export default {
     font-size: 30px;
     color: #d10000;
     -webkit-text-stroke-color: #ffffff;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.5px;
     z-index: 3;
 
 }

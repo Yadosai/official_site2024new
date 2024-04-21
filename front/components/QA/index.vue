@@ -1,6 +1,5 @@
 <template>
-    <item question="開催日はいつですか？" answer="今年度は5月31日が前夜祭で6月1日が
-    本祭になっております" />
+    <item question="開催日はいつですか？" answer="今年度は5月31日が前夜祭で6月1日が本祭になっております" />
 </template>
   
 <script>

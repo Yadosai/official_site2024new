@@ -1,5 +1,5 @@
 <template>
-    <section> <!-- :id="id" -->
+    <section>
         <div class="titleContainer">
             <p class="title">{{ title }}</p>
         </div>
@@ -37,7 +37,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 defineProps({
-    id: String,
     title: String,
     holder: String,
     description: String,

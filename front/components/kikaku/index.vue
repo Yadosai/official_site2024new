@@ -1,5 +1,5 @@
 <template>
-    <div class="body">
+    <div class="wholeItems">
     <h1>企画コンポーネント</h1>
     <item title="ゆかこん" :imgUrl="src1" holder="一年生向け企画" place="メインステージ" date="5月31日：14:00～15:00" description="やどかり祭を最高に盛り上げるメイン企画。各チームが個性的なパフォーマンスで観客の皆さんを魅了し
     優勝を目指します。ゆかたを着た出演者を中心としたチーム一丸となってのパフォーマンスは必見です。" 
@@ -19,7 +19,7 @@ import Img2 from '~/assets/img/kikaku/mikoshi.jpg'
 
 export default {
     components: { item,timeTable_1,timeTable_2 },
-    data () {
+    kikakuImgData () {
     return {
       src1: Img1,
       src2 :Img2
@@ -29,7 +29,7 @@ export default {
 </script>
   
 <style scoped>
-.body{
+.wholeItems{
     background: #CBCBCB;
     display: flex;
 padding: 25px 0px;

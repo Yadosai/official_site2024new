@@ -1,5 +1,5 @@
 <template>
-    <div class="wholeItems">
+    <div class="wholeKikaku">
     <h1>企画コンポーネント</h1>
     <item title="ゆかこん" :imgUrl="src1" holder="一年生向け企画" place="メインステージ" date="5月31日：14:00～15:00" description="やどかり祭を最高に盛り上げるメイン企画。各チームが個性的なパフォーマンスで観客の皆さんを魅了し
     優勝を目指します。ゆかたを着た出演者を中心としたチーム一丸となってのパフォーマンスは必見です。" 
@@ -29,7 +29,7 @@ export default {
 </script>
   
 <style scoped>
-.wholeItems{
+.wholeKikaku{
     background: #CBCBCB;
     display: flex;
 padding: 25px 0px;

@@ -1,0 +1,8 @@
+#kikakuのみプッシュしたい
+docker-compose.yml
+package-lock.json
+README.md
+front
+!front/assets/img/kikaku
+!front/components/kikaku/index.vue
+!front/components/kikaku/item.vue

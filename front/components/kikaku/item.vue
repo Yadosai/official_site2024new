@@ -45,7 +45,7 @@ defineProps({
     placeUrl: String,
     date: String,
     dateUrl: String,
-})
+});
 
 
 const isActive = ref(false);

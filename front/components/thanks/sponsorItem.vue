@@ -28,7 +28,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255,255,255,1);
+    background-color: $secondary-color;
 }
 
 .sponsor-logo-container {
@@ -57,6 +57,6 @@ export default {
 
 .no-underline {
     text-decoration: none;
-    color: black;
+    color: $tertiary-color;
 }
 </style>

@@ -31,9 +31,9 @@ export default {
     margin: 0;
     width: 344px;
     height: 100%;
-    background-color: #cbcbcb;
+    background-color: $quaternary-color;
     border-radius: 8px;
-    border: #d10000 1px solid;
+    border: $primary-color 1px solid;
     padding: 15px;
 }
 .question {
@@ -70,9 +70,8 @@ export default {
     top: 0;
     left: 15px;
     font-size: 30px;
-    color: #ffffff;
-    -webkit-text-stroke-color: #d10000;
-    -webkit-text-stroke-width: 0.5px;
+    color: $secondary-color;
+    text-shadow: -0.5px 0 $primary-color, 0 0.5px $primary-color, 0.5px 0 $primary-color, 0 -0.5px $primary-color;
     z-index: 3;
 }
 
@@ -85,9 +84,8 @@ export default {
     top: 0;
     left: 15px;
     font-size: 30px;
-    color: #d10000;
-    -webkit-text-stroke-color: #ffffff;
-    -webkit-text-stroke-width: 0.5px;
+    color: $primary-color;
+    text-shadow: -0.5px 0 $secondary-color, 0 0.5px $secondary-color, 0.5px 0 $secondary-color, 0 -0.5px $secondary-color;
     z-index: 3;
 
 }
@@ -119,10 +117,10 @@ export default {
 }
 
 .red {
-    background-color: #d10000;
+    background-color: $primary-color;
 }
 .white {
-    background-color: white;
-    border: #d10000 1px solid;
+    background-color: $secondary-color;
+    border: $primary-color 1px solid;
 }
 </style>

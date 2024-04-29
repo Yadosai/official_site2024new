@@ -1,6 +1,5 @@
 <template>
-    <h1>Q&Aページ</h1>
-    <QA />
+    <QA  />
 </template>
   
 <script>

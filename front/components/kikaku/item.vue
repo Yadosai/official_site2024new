@@ -5,7 +5,8 @@
         </div>
 
         <div class="content">
-            <img :src="imgUrl" class="projectImg" :class="{ 'isActive': isActive, 'isInactive': !isActive }">
+            <img src='~/assets/img/kikaku/yukakon.png' class="projectImg"
+                :class="{ 'isActive': isActive, 'isInactive': !isActive }">
             <div class="kikakuDesc">
                 <p class="group">{{ holder }}</p>
                 <div class="placeDateContainer">
@@ -14,11 +15,15 @@
                         <p class="placeS">{{ place }}</p>
                     </a>
                     <a href="" class="date">
-                        <img src="~\assets\img\kikaku\calender.png">
+                        <img src="~assets/img/mogiten/calendar.png">
                         <p class="dateS">{{ date }}</p>
                     </a>
                 </div>
-                <p class="description" :class="{ 'isActive': isActive, 'isInactive': !isActive }" >{{ description }}</p>
+                <!-- <p class="description" :class="{ 'isActive': isActive, 'isInactive': !isActive }" >{{ description }}</p> -->
+                <transition name="fade">
+                    <p class="description" :class="{ 'description isActive': isActive, 'isInactive': !isActive }">{{
+                description }}</p>
+                </transition>
             </div>
         </div>
 
@@ -51,12 +56,12 @@ defineProps({
 const isActive = ref(false);
 
 const toggleDetail = () => {
- isActive.value = !isActive.value;
+    isActive.value = !isActive.value;
 };
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 section {
     display: flex;
     width: 365px;
@@ -66,7 +71,7 @@ section {
     gap: 0px -61px;
     flex-wrap: wrap;
     border-radius: 8px;
-    background: #FFF;    
+    background: $secondary-color;
     position: relative;
 }
 
@@ -78,25 +83,24 @@ section {
     align-items: center;
     flex-shrink: 0;
     border-radius: 8px 8px 0px 0px;
-    background: #D00000;
+    background: $primary-color;
 }
 
 .title {
+    font-family: map-get($font-styles, family);
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
     width: 251px;
     flex-shrink: 0;
-    color: #FFF;
-    font-family: "Kaisei HarunoUmi";
+    color: $secondary-color;
     font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .content {
     display: flex;
     width: 350px;
     padding: 15px;
-    /* background: #FFF; */
     align-items: flex-start;
     align-content: flex-start;
     gap: 10px;
@@ -110,19 +114,21 @@ section {
     height: 150px;
     flex-shrink: 0;
     border-radius: 8px;
+    transition: width 0.3s ease-out, height 0.3s ease-out;
 }
 
 .projectImg.isActive {
-    margin: 0 auto;
-    width: 336.772px;
+    margin: 0;
+    left: 0px;
+    width: 350px;
     height: 190px;
     flex-shrink: 0;
     border-radius: 8px;
+    transition: width 0.3s ease-out, height 0.3s ease-out;
 }
 
 
 .kikakuDesc {
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -130,15 +136,15 @@ section {
 }
 
 .group {
+    font-family: map-get($font-styles, family);
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
     margin: 0;
     width: 146.707px;
-    color: #000;
+    color: $tertiary-color;
     text-align: center;
-    font-family: "Kaisei HarunoUmi";
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .placeDateContainer {
@@ -151,7 +157,7 @@ section {
 .place {
     margin: 0;
     text-decoration: none;
-    color: #000;
+    color: $tertiary-color;
     display: flex;
     padding-right: 44.898px;
     align-items: flex-start;
@@ -159,14 +165,19 @@ section {
     cursor: pointer;
 }
 
-.placeS{
+.place img {
+    width: 23px;
+    height: 23px;
+}
+
+.placeS {
+    font-family: map-get($font-styles, family);
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
     margin: 0;
-    color: #000;
-font-family: "Kaisei HarunoUmi";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    color: $tertiary-color;
+    font-size: 14px;
 }
 
 .date {
@@ -178,24 +189,30 @@ line-height: normal;
     cursor: pointer;
 }
 
-.dateS{
+.date img {
+    width: 23px;
+    height: 23px;
+}
+
+.dateS {
+    font-family: map-get($font-styles, family);
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
     margin: auto 0 0 0;
-    color: #000;
-font-family: "Kaisei HarunoUmi";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    color: $tertiary-color;
+    font-size: 14px;
 }
 
 .description.isActive {
+    font-family: map-get($font-styles, family);
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
     width: 332.186px;
-    color: #000;
-    font-family: "Kaisei HarunoUmi";
+    color: $tertiary-color;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    transition: opacity 0.5s;
 }
 
 .description.isInactive {
@@ -211,7 +228,7 @@ line-height: normal;
     cursor: pointer;
 }
 
-.openBtn.isInactive{
+.openBtn.isInactive {
     display: none;
 }
 
@@ -224,47 +241,47 @@ line-height: normal;
     cursor: pointer;
 }
 
-.closeBtn.isInactive{
+.closeBtn.isInactive {
     display: none;
 }
 
 .textOpen {
+    font-family: map-get($font-styles, family);
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
     margin: 0;
     width: 30px;
     height: 18px;
-    color: #D00000;
+    color: $primary-color;
     text-align: center;
-    font-family: "Kaisei HarunoUmi";
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .textClose {
+    font-family: map-get($font-styles, family);
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
     margin: 0;
     width: 45px;
     height: 18px;
-    color: #D00000;
+    color: $primary-color;
     text-align: center;
-    font-family: "Kaisei HarunoUmi";
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .openBtn img {
     margin: auto 0;
     width: 20px;
     height: 18px;
-    fill: #D00000;
+    fill: $primary-color;
 }
 
 .closeBtn img {
     margin: auto 0;
     width: 20px;
     height: 18px;
-    fill: #D00000;
+    fill: $primary-color;
 }
 </style>

@@ -1,5 +1,4 @@
 <template>
-    <h1>企画ページのitemです。</h1>
     <div class="timeTableContainer">
         <div class="locations">
             <div class="locationItem" v-for="(stage, index) in stages" :key="index">

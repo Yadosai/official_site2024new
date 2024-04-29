@@ -1,13 +1,19 @@
 <template>
     <h1>協賛ページコンポーネント</h1>
-    <item />
+    <sponsorItem sponsorUrl="https://www.seirock-ya.jp/" sponsorLogoUrl="/img/seirokuya.png" :sponsorDescript="SeirokuyaText"/>
 </template>
   
 <script>
-import item from '~/components/thanks/sponsorItem'
+import sponsorItem from '~/components/thanks/sponsorItem'
+
 
 export default {
-    components: { item },
+    components: { sponsorItem },
+    data() {
+        return {
+            SeirokuyaText: "我々は清六家。\n日本一のラーメン屋..."
+        };
+    }
 }
 </script>
   

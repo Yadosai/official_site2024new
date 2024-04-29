@@ -1,5 +1,4 @@
 <template>
-    <h1>企画ページ</h1>
     <kikaku />
 </template>
   

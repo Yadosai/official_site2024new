@@ -7,8 +7,8 @@
     </div>
     <div class="bigsponsorContainer">
         <sponsorItem sponsorUrl="https://www.seirock-ya.jp/" sponsorLogoUrl="/img/seirokuya.png" :sponsorDescript="SeirokuyaText"/>
-        <sponsorItem sponsorUrl="https://gakuen-menkyo.jp/" sponsorLogoUrl="/img/mentoru01.png" :sponsorDescript="GakkuenMenkyoText"/>
-        <sponsorItem sponsorUrl="https://mentoru.jp/info/tsukuba.html" sponsorLogoUrl="/img/mentoru02.png" :sponsorDescript="MentoruText"/>
+        <sponsorItem sponsorUrl="https://gakuen-menkyo.jp/" sponsorLogoUrl="/img/gakuenmenkyo.png" :sponsorDescript="GakkuenMenkyoText"/>
+        <sponsorItem sponsorUrl="https://mentoru.jp/info/tsukuba.html" sponsorLogoUrl="/img/mentoru.png" :sponsorDescript="MentoruText"/>
     </div>
     
     <div class="sponsorsContainer">

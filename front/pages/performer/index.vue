@@ -1,5 +1,4 @@
 <template>
-    <h1>出演団体一覧ページ</h1>
     <performer />
 </template>
   

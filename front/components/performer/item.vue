@@ -1,5 +1,4 @@
 <template>
-    <!-- <h1>出演団体一覧ページのitemです。</h1> -->
     <div class="performer">
         <div class="performerHeader">
             <p class="performerName" :style="{fontSize: performerNameFontsize + 'px'}">
@@ -8,25 +7,25 @@
         </div>
         <div class="contents">
             <div class="contentsName">
-                <p class="kikakuName">
+                <p class="kikakuName"  v-if="kikakuNameUrl">
                     <a :href="kikakuNameUrl" @click="redirectToTrl(kikakuNameUrl)" :target="_broke">
                         {{kikakuName}}            
                     </a>
                 </p>
-                <p class="mogitenName">
+                <p class="mogitenName"  v-if="mogitenNameUrl">
                     <a :href="mogitenNameUrl" @click="redirectToTrl(mogitenNameUrl)">
                         {{ mogitenName }}
                     </a>
                 </p>
             </div>
             <div class="SNS">
-                <p class="SNSName">
+                <p class="SNSName" v-if="instaIDUrl">
                     <a :href="instaIDUrl" @click="redirectToTrl(instaIDUrl)" target="_blank">
                         <img src="~/assets/img/base/Instagram.png" class="icon">
                         <p class="SNSID">{{ instaID }}</p>
                     </a>
                 </p>
-                <p class="SNSName">
+                <p class="SNSName"  v-if="twitterIDUrl">
                     <a :href="twitterIDUrl" @click="redirectToTrl(twitterIDUrl)" target="_blank">
                         <img src="~/assets/img/base/twitter.png" class="icon">
                         <p class="SNSID">{{ twitterID }}</p>

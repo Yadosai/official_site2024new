@@ -37,7 +37,6 @@ const route = useRoute();
 
 <style lang="scss">
 #footer {
-    width: calc(100vw - 50px);
     background-color: $secondary-color;
     margin: 0;
     padding: 25px;
@@ -101,7 +100,6 @@ const route = useRoute();
 }
 
 #darkFooter {
-    width: calc(100vw - 50px);
     background-color: $tertiary-color;
     margin: 0;
     padding: 25px;

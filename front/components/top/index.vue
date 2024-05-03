@@ -1,10 +1,10 @@
 <template>
     <div id="eyeCatch">
-        <img src="~/assets/img/top/main.png" class="img-background">
+        <img src="~/assets/img/top/main.jpg" class="img-background">
         <div class="text-overlay">
             <p class="eyeCatchTitle">やどかり祭</p>
             <p class="eyeCatchSubtitle">-最高到達点-</p>
-            <p class="eyeCatchDate">5/21,6/1</p>
+            <p class="eyeCatchDate">5/31,6/1</p>
         </div>
     </div>
     <div id="updateInfo">
@@ -50,7 +50,6 @@ export default {
 <style lang="scss">
 #eyeCatch {
     position: relative;
-    width: 100vw;
     height: 60vh;
     overflow: hidden;
 }
@@ -84,11 +83,13 @@ export default {
     width: 50px;
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: 25px;
     color: $secondary-color;
     text-align: center;
     font-size: 32px;
-    margin-top: 0px;
+    margin: 0px;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
 }
 
 .eyeCatchSubtitle {
@@ -98,10 +99,10 @@ export default {
     line-height: map-get($font-styles, line-height);
     position: absolute;
     left: 10px;
-    bottom: 0px;
-    margin-bottom: 20px;
+    bottom: 20px;
     color: $secondary-color;
     font-size: 20px;
+    margin: 0px;
 }
 
 .eyeCatchDate {
@@ -111,11 +112,11 @@ export default {
     line-height: map-get($font-styles, line-height);
     position: absolute;
     right: 10px;
-    bottom: 0px;
-    margin-bottom: 20px;
+    bottom: 20px;
     color: $secondary-color;
     text-align: center;
     font-size: 20px;
+    margin: 0px;
 }
 
 #updateInfo {
@@ -187,7 +188,6 @@ export default {
 
 @media (min-width: 950px) {
     #eyeCatch {
-        width: 100vw;
         height: calc(100vh - 60px);
     }
 
@@ -195,22 +195,21 @@ export default {
         width: 100px;
         right: 30px;
         margin-top: 30px;
-        font-size: 96px;
+        font-size: 30vh;
         line-height: 1.2;
+        font-size: 10vh;
     }
 
     .eyeCatchSubtitle {
         left: 10px;
-        bottom: 0px;
-        margin-bottom: 20px;
-        font-size: 96px;
+        bottom: 20px;
+        font-size: 5vh;
     }
 
     .eyeCatchDate {
         right: 10px;
-        bottom: 0px;
-        margin-bottom: 20px;
-        font-size: 48px;
+        bottom: 20px;
+        font-size: 5vh;
     }
 
     .updateInfoTitle {
@@ -219,6 +218,11 @@ export default {
 
     .trafficTitle {
         font-size: 40px;
+    }
+
+    .trafficImg {
+        width: 650px;
+        height: auto;
     }
 
 }

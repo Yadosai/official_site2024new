@@ -4,7 +4,7 @@
     </div>
     <div id="otherContainer">
         <item itemTitle="クラウドファンディング" :item-contents="[
-            { text: '期間　(6月1日 12:00~)', href: '' },
+            { text: '期間　(~6月1日 12:00)', href: '' },
             { text: '概要　やどかり祭開催の為の寄付です', href: '' },
             { text: 'URL:https://readyfor.jp/projects/50-yadosai', href: 'https://readyfor.jp/projects/50-yadosai' }
         ]" item-font-size="18px" />

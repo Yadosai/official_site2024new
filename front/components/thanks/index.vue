@@ -98,9 +98,9 @@ export default {
     components: { sponsorItem },
     data() {
         return {
-            SeirokuyaText: "我々は清六家。\n日本一のラーメン屋...",
+            SeirokuyaText: "",
             GakuenMenkyoText: "",
-            MentoruText: "めんとるステーションです。 \n免許取りにきてね。"
+            MentoruText: ""
         };
     }
 }

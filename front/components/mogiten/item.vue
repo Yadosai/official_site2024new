@@ -8,12 +8,12 @@
             <div class="DetailContainer">
                 <div class="location">
                     <a :href="'#mapContainer'" class="locationLink">
-                        <img src="~/assets/img/mogiten/calendar.png">
+                        <img src="~/assets/img/mogiten/mapIcon.png">
                         <p>{{ mogitenId }}</p>
                     </a>
                 </div>
                 <div class="schedule">
-                    <img src="~/assets/img/mogiten/mapIcon.png">
+                    <img src="~/assets/img/mogiten/calendar.png">
                     <div class="dates">
                         <p>{{ holdingTime_1 }}</p>
                         <p>{{ holdingTime_2 }}</p>

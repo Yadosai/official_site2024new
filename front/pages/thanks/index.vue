@@ -1,5 +1,4 @@
 <template>
-    <h1>協賛ページ</h1>
     <thanks />
 </template>
   

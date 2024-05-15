@@ -72,7 +72,7 @@ export default {
                     { id: 10, stageId: 5, kikakuName: 'やどカラ', kikakuStart: '16:10', kikakuEnd: '16:40' },
                     { id: 11, stageId: 5, kikakuName: '神輿', kikakuStart: '16:50', kikakuEnd: '18:45' },
                     { id: 12, stageId: 3, kikakuName: 'ミニステ', kikakuStart: '12:00', kikakuEnd: '16:10' },
-                    { id: 13, stageId: 5, kikakuName: 'ストパフォ', kikakuStart: '12:00', kikakuEnd: '16:10' },
+                    { id: 13, stageId: 6, kikakuName: 'ストパフォ', kikakuStart: '12:00', kikakuEnd: '16:10' },
                     { id: 14, stageId: 4, kikakuName: '火文字', kikakuStart: '21:10', kikakuEnd: '21:30' },
                     { id: 11, stageId: 4, kikakuName: '神輿(展示)', kikakuStart: '9:30', kikakuEnd: '16:10' }
                 ]

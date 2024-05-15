@@ -110,6 +110,7 @@ export default {
 .thanksEyeCatch {
     display: flex;
     padding: 25px;
+    margin: 0;
     flex-direction: column;
     align-items: center;
     background-color: $quaternary-color;
@@ -120,6 +121,7 @@ export default {
     line-height: map-get($font-styles, line-height);
     font-family: map-get($font-styles, family);
     font-size: 40px;
+    margin: 0;
 }
 .thanksabout {
     background-color: $primary-color;
@@ -127,6 +129,7 @@ export default {
     height: fit-content;
     border-radius: 8px;
     padding: 5px;
+    margin: 0;
     text-align: center;
 }
 .thanksabout p {
@@ -142,6 +145,7 @@ export default {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+    margin: 0;
 }
 .sponsorsContainer {
     display: flex;
@@ -150,6 +154,7 @@ export default {
     flex-wrap: wrap;
     column-gap: 10px;
     padding: 50px;
+    margin: 0;
 }
 .miniCon {
     display: flex;
@@ -159,6 +164,7 @@ export default {
     width: fit-content;
     align-content: flex-start;
     gap: 5px;
+    margin: 0;
 }
 .miniCon span {
     font-style: map-get($font-styles, style);
@@ -167,6 +173,7 @@ export default {
     font-family: map-get($font-styles, family);
     font-size: 14px;
     width: fit-content;
+    margin: 0;
 }
 </style>
   

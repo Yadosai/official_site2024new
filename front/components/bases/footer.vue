@@ -4,9 +4,9 @@
     <div :id="$route.path === '/top' ? 'darkFooter' : 'footer'">
         <ul class="footerSNSContainer">
             <li class="snsItem">
-                <a href="https://www.instagram.com/yadokari_shinkan2024/" target="_blank" class="snsLink">
+                <a href="https://www.instagram.com/yadokari_sai/" target="_blank" class="snsLink">
                     <img src="~/assets/img/base/Instagram.png">
-                    <p>yadokari_shinkan2024</p>
+                    <p>@yadokari_sai</p>
                 </a>
             </li>
             <li class="snsItem">

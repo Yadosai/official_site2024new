@@ -95,6 +95,7 @@ p {
     font-style: map-get($font-styles, style);
     font-weight: map-get($font-styles, weight);
     line-height: map-get($font-styles, line-height);
+    white-space: pre-line;
 }
 
 .contents {
@@ -125,7 +126,7 @@ p {
 
 .mogitenName {
     width: 264px;
-    height: 27px;
+    height: 0;
     font-size: 15px;
 
     font-family: map-get($font-styles, family);

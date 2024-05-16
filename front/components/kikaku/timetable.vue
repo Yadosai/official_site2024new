@@ -23,12 +23,14 @@
             <div class="closeSidebar" :style="sidebarCloseStyle">
             </div>
             <div class="timeTableContent">
-                <div class="stageItemContainer" v-for="stageId in [1, 2, 3, 4]" :key="stageId">
-                    <div v-for="kikaku in filteredKikakuData(stageId)" :key="kikaku.id" class="kikakuItem"
+                <div class="stageItemContainer" v-for="stage in stages" :key="stage.id">
+                    <div v-for="kikaku in filteredKikakuData(stage.id)" :key="kikaku.id" class="kikakuItem"
                         :style="getStyle(kikaku.kikakuStart, kikaku.kikakuEnd, timeTableStart)">
-                        <a :href="kikaku.id" class="stageKikakuLink">
-                            <p class="stageKikakuName">{{ kikaku.kikakuName }}</p>
-                            <p class="stageKikakuTime">{{ kikaku.kikakuStart }} - {{ kikaku.kikakuEnd }}</p>
+                        <a :href="`kikaku#${kikaku.id}`" class="stageKikakuLink">
+                            <div class="stageInfoWrapper">
+                                <p class="stageKikakuName">{{ kikaku.kikakuName }}</p>
+                                <p class="stageKikakuTime">{{ kikaku.kikakuStart }} - {{ kikaku.kikakuEnd }}</p>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -76,7 +78,7 @@ export default {
         getMinutesFromTimeString(timeString) {
             const [hours, minutes] = timeString.split(':').map(Number);
             return hours * 60 + minutes;
-        }
+        },
     },
     computed: {
         pixelsPerMinute() {
@@ -108,6 +110,7 @@ export default {
     }
 }
 </script>
+
 
 
 <style scoped lang="scss">
@@ -246,11 +249,12 @@ export default {
 
 .kikakuItem {
     background-color: $secondary-color;
-    border-radius: 8px;
+    border-radius: 3px;
     border: 1px solid $primary-color;
     position: absolute;
     width: 161px;
     padding: 0 5px;
+    overflow: hidden;
 }
 
 .stageKikakuLink {
@@ -259,12 +263,18 @@ export default {
     text-decoration: none;
 }
 
-.kikakuItem .stageKikakuLink p {
+.stageInfoWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.kikakuItem .stageKikakuLink .stageInfoWrapper p {
     margin: 0;
     font-family: map-get($font-styles, family);
     font-style: map-get($font-styles, style);
     font-weight: map-get($font-styles, weight);
     line-height: map-get($font-styles, line-height);
+    font-size: 9px;
 }
 
 .stageKikakuName {

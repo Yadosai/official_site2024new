@@ -1,30 +1,34 @@
 <template>
-    <section>
+    <section :id="`${kikakuID}`">
         <div class="titleContainer">
             <p class="title">{{ title }}</p>
         </div>
 
         <div class="content">
-            <img src='~/assets/img/kikaku/yukakon.png' class="projectImg"
+            <img :src=imgUrl class="projectImg"
                 :class="{ 'isActive': isActive, 'isInactive': !isActive }">
             <div class="kikakuDesc">
                 <p class="group">{{ holder }}</p>
                 <div class="placeDateContainer">
-                    <a href="" class="place">
+                    <a href="kikaku#map" class="place">
                         <img src="~\assets\img\kikaku\place.png">
-                        <p class="placeS">{{ place }}</p>
+                        <div class="dateContainer">
+                            <p v-for="(place, index) in places" :key="index" class="placeS">{{ place }}</p>
+                        </div>
                     </a>
-                    <a href="" class="date">
+                    <a href="kikaku#timeTable" class="date">
                         <img src="~assets/img/mogiten/calendar.png">
-                        <p class="dateS">{{ date }}</p>
+                        <div class="dateContainer">
+                            <p v-for="(date, index) in dates" :key="index" class="dateS">{{ date }}</p>
+                        </div>
                     </a>
                 </div>
                 <!-- <p class="description" :class="{ 'isActive': isActive, 'isInactive': !isActive }" >{{ description }}</p> -->
-                <transition name="fade">
-                    <p class="description" :class="{ 'description isActive': isActive, 'isInactive': !isActive }">{{
-                description }}</p>
-                </transition>
             </div>
+            <transition name="fade">
+                <p class="description" :class="{ 'description isActive': isActive, 'isInactive': !isActive }">{{
+            description }}</p>
+            </transition>
         </div>
 
         <div class="openBtn" :class="{ 'isActive': !isActive, 'isInactive': isActive }" @click="toggleDetail">
@@ -39,26 +43,57 @@
     </section>
 </template>
 
-<script setup lang="ts">
-import { ref } from 'vue';
-defineProps({
-    title: String,
-    holder: String,
-    description: String,
-    imgUrl: String,
-    place: String,
-    placeUrl: String,
-    date: String,
-    dateUrl: String,
-})
+<script>
+import { ref, onMounted, watch } from 'vue';
 
+export default {
+    props: {
+        kikakuID: Number,
+        title: String,
+        holder: String,
+        description: String,
+        imgUrl: String,
+        places: Array,
+        placeUrl: String,
+        dates: Array,
+        dateUrl: String
+    },
+    setup(props) {
+        const isActive = ref(false);
 
-const isActive = ref(false);
+        const checkHash = () => {
+            const hash = window.location.hash.substring(1); // #を取り除く
+            console.log(hash);
+            console.log(`kikaku${props.kikakuID}`);
+            if (hash === `${props.kikakuID}`) {
+                isActive.value = true;
+            } else {
+                isActive.value = false;
+            }
+        };
 
-const toggleDetail = () => {
-    isActive.value = !isActive.value;
+        onMounted(() => {
+            checkHash();
+            window.addEventListener('hashchange', checkHash);
+        });
+
+        watch(
+            () => props.kikakuID,
+            () => {
+                checkHash();
+            }
+        );
+
+        const toggleDetail = () => {
+            isActive.value = !isActive.value;
+        };
+
+        return {
+            isActive,
+            toggleDetail
+        };
+    }
 };
-
 </script>
 
 <style scoped lang="scss">
@@ -73,6 +108,7 @@ section {
     border-radius: 8px;
     background: $secondary-color;
     position: relative;
+    scroll-margin-top: 70px;
 }
 
 .titleContainer {
@@ -91,10 +127,9 @@ section {
     font-style: map-get($font-styles, style);
     font-weight: map-get($font-styles, weight);
     line-height: map-get($font-styles, line-height);
-    width: 251px;
     flex-shrink: 0;
     color: $secondary-color;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .content {
@@ -115,6 +150,7 @@ section {
     flex-shrink: 0;
     border-radius: 8px;
     transition: width 0.3s ease-out, height 0.3s ease-out;
+    object-fit: cover;
 }
 
 .projectImg.isActive {
@@ -125,6 +161,7 @@ section {
     flex-shrink: 0;
     border-radius: 8px;
     transition: width 0.3s ease-out, height 0.3s ease-out;
+    object-fit: cover;
 }
 
 
@@ -133,6 +170,7 @@ section {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    width: 190px;
 }
 
 .group {
@@ -143,7 +181,6 @@ section {
     margin: 0;
     width: 146.707px;
     color: $tertiary-color;
-    text-align: center;
     font-size: 20px;
 }
 
@@ -159,10 +196,10 @@ section {
     text-decoration: none;
     color: $tertiary-color;
     display: flex;
-    padding-right: 44.898px;
     align-items: flex-start;
     align-self: stretch;
     cursor: pointer;
+    width: 100%;
 }
 
 .place img {
@@ -187,11 +224,17 @@ section {
     align-items: flex-start;
     align-self: stretch;
     cursor: pointer;
+    flex-direction: row;
 }
 
 .date img {
     width: 23px;
     height: 23px;
+}
+
+.dateContainer {
+    display: flex;
+    flex-flow: column;
 }
 
 .dateS {
@@ -209,7 +252,7 @@ section {
     font-style: map-get($font-styles, style);
     font-weight: map-get($font-styles, weight);
     line-height: map-get($font-styles, line-height);
-    width: 332.186px;
+    width: 100%;
     color: $tertiary-color;
     font-size: 20px;
     transition: opacity 0.5s;

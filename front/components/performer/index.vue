@@ -8,7 +8,8 @@
       kikakuNameUrl="https://yadokarisai.com/kikaku" mogitenName="" mogitenNameUrl="https://yadokarisai.com/kikaku"
       instaID="@bombs_tkb" instaIDUrl="http://instagram.com/bombs_tkb" twitterID="@bombs_tkb"
       twitterIDUrl="http://twitter.com/bombs_tkb" />
-    <item performerName="筑波大学ダブルダッチサークルpurpleme" performerNameFontsize="20" kikakuName="やどかりダンス (6月1日 13:40~)"
+    <item performerName="筑波大学ダブルダッチサークル
+    purpleme" performerNameFontsize="20" kikakuName="やどかりダンス (6月1日 13:40~)"
       kikakuNameUrl="https://yadokarisai.com/kikaku" mogitenName="" mogitenNameUrl="https://yadokarisai.com/kikaku"
       instaID="@purplume.dd" instaIDUrl="http://instagram.com/purplume.dd" twitterID="@purplume_"
       twitterIDUrl="http://twitter.com/purplume_" />
@@ -20,7 +21,8 @@
       kikakuNameUrl="https://yadokarisai.com/kikaku" mogitenName="" mogitenNameUrl="https://yadokarisai.com/kikaku"
       instaID="@kirikirimaaai" instaIDUrl="http://instagram.com/kirikirimaaai" twitterID="@kiri_kiri_mai"
       twitterIDUrl="http://twitter.com/kiri_kiri_mai" />
-    <item performerName="筑波大学Kpopコピーダンスサークルコグマ" performerNameFontsize="20" kikakuName="やどかりダンス(6月1日 14:55~)"
+    <item performerName="筑波大学Kpopコピーダンスサークル
+    コグマ" performerNameFontsize="20" kikakuName="やどかりダンス(6月1日 14:55~)"
       kikakuNameUrl="https://yadokarisai.com/kikaku" mogitenName="" mogitenNameUrl="https://yadokarisai.com/kikaku"
       instaID="@koguma_guma_" instaIDUrl="http://instagram.com/koguma_guma_" twitterID="@kogumaguma_kpop"
       twitterIDUrl="http://twitter.com/kogumaguma_kpop" />
@@ -76,11 +78,13 @@
       kikakuNameUrl="https://yadokarisai.com/kikaku" mogitenName="" mogitenNameUrl="https://yadokarisai.com/kikaku"
       instaID="@pbcmpbcmpbcm" instaIDUrl="http://instagram.com/pbcmpbcmpbcm" twitterID="@pbcm_tkbuniv"
       twitterIDUrl="http://twitter.com/pbcm_tkbuniv" />
-    <item performerName="筑波大学ジャズ楽団Neopolice bigband" performerNameFontsize="20" kikakuName="火文字前パフォ(5月31日 20:00~)"
+    <item performerName="筑波大学ジャズ楽団
+    Neopolice bigband" performerNameFontsize="20" kikakuName="火文字前パフォ(5月31日 20:00~)"
       kikakuNameUrl="https://yadokarisai.com/kikaku" mogitenName="" mogitenNameUrl="https://yadokarisai.com/kikaku"
       instaID="@neopolisbigband" instaIDUrl="http://instagram.com/neopolisbigband" twitterID="@NeopolisBIGBAND"
       twitterIDUrl="http://twitter.com/NeopolisBIGBAND" />
-    <item performerName="ファイヤートーチトワリング団体Fire Workers" performerNameFontsize="20" kikakuName="火文字前パフォ(5月31日 20:40~)"
+    <item performerName="ファイヤートーチトワリング団体
+    Fire Workers" performerNameFontsize="20" kikakuName="火文字前パフォ(5月31日 20:40~)"
       kikakuNameUrl="https://yadokarisai.com/kikaku" mogitenName="" mogitenNameUrl="https://yadokarisai.com/kikaku"
       instaID="@" instaIDUrl="http://instagram.com/" twitterID="@"
       twitterIDUrl="http://twitter.com/" />
@@ -92,7 +96,7 @@
       kikakuNameUrl="https://yadokarisai.com/kikaku" mogitenName="" mogitenNameUrl="https://yadokarisai.com/kikaku"
       instaID="@wins.tsukuba" instaIDUrl="http://instagram.com/wins.tsukuba" twitterID="@wins_tsukuba"
       twitterIDUrl="http://twitter.com/wins_tsukuba" />
-    <item performerName="筑波大学花火研究会" performerNameFontsize="20" kikakuName="花火(6月1日 20:00~)"
+    <item performerName="筑波大学花火研究会" performerNameFontsize="20" kikakuName="花火(6月1日 20:50~)"
       kikakuNameUrl="https://yadokarisai.com/kikaku" mogitenName="" mogitenNameUrl="https://yadokarisai.com/kikaku"
       instaID="@tsukuba.hanabi" instaIDUrl="http://instagram.com/tsukuba.hanabi" twitterID="@HanabiTsukuba"
       twitterIDUrl="http://twitter.com/HanabiTsukuba" />

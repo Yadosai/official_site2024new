@@ -163,7 +163,7 @@ export default {
     scroll-margin-top: 70px;
 }
 
-.kikakuEyeCatch p {
+.kikakuEyeCatchTitle {
     color: $tertiary-color;
     font-family: "Kaisei HarunoUmi";
     font-size: 24px;
@@ -290,7 +290,7 @@ export default {
 }
 
 @media (min-width: 950px) {
-    .kikakuEyeCatchTitle p {
+    .kikakuEyeCatchTitle {
         font-size: 40px;
     }
 

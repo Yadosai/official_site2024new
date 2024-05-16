@@ -1,5 +1,5 @@
 <template>
-    <div class="mogitenItem">
+    <section :id="`${mogitenId}`" class="mogitenItem">
         <div class="mogitenItemHeader">
             <p class="organization">{{ organizationName }}</p>
             <p class="title" :style="{ fontSize: mogitenFontSize }">{{ mogitenName }}</p>
@@ -7,13 +7,13 @@
         <div class="ItemContent">
             <div class="DetailContainer">
                 <div class="location">
-                    <a :href="'#mapContainer'" class="locationLink">
-                        <img src="~/assets/img/mogiten/mapIcon.png">
+                    <a href="/mogiten#mogitenMapContainer" class="locationLink">
+                        <img src="~/assets/img/common/place.png">
                         <p>{{ mogitenId }}</p>
                     </a>
                 </div>
                 <div class="schedule">
-                    <img src="~/assets/img/mogiten/calendar.png">
+                    <img src="~/assets/img/common/calendar.png">
                     <div class="dates">
                         <p>{{ holdingTime_1 }}</p>
                         <p>{{ holdingTime_2 }}</p>
@@ -22,7 +22,7 @@
             </div>
             <p class="Introduction">{{ mogitenIntroduction }}</p>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -43,6 +43,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+section {
+    scroll-margin-top: 70px;
+}
+
 .mogitenItem {
     display: flex;
     position: relative;

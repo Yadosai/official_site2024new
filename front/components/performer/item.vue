@@ -1,22 +1,26 @@
 <template>
     <div class="performer">
         <div class="performerHeader">
-            <p class="performerName" :style="{fontSize: performerNameFontsize + 'px'}">
-                {{performerName}}
+            <p class="performerName" :style="{ fontSize: performerNameFontsize + 'px' }">
+                {{ performerName }}
             </p>
         </div>
         <div class="contents">
-            <div class="contentsName">
-                <p class="kikakuName"  v-if="kikakuNameUrl">
-                    <a :href="kikakuNameUrl" @click="redirectToTrl(kikakuNameUrl)" :target="_broke">
-                        {{kikakuName}}            
-                    </a>
-                </p>
-                <p class="mogitenName"  v-if="mogitenNameUrl">
-                    <a :href="mogitenNameUrl" @click="redirectToTrl(mogitenNameUrl)">
-                        {{ mogitenName }}
-                    </a>
-                </p>
+            <div class="contentName">
+                <div v-for="(kikaku, index) in kikakuList" :key="'kikaku-' + index">
+                    <p class="kikakuName" v-if="kikaku.url">
+                        <NuxtLink :to="kikaku.url">
+                            {{ kikaku.name }}
+                        </NuxtLink>
+                    </p>
+                </div>
+                <div v-for="(mogiten, index) in mogitenList" :key="'mogiten-' + index">
+                    <p class="mogitenName" v-if="mogiten.url">
+                        <NuxtLink :to="mogiten.url">
+                            {{ mogiten.name }}
+                        </NuxtLink>
+                    </p>
+                </div>
             </div>
             <div class="SNS">
                 <p class="SNSName" v-if="instaIDUrl">
@@ -25,7 +29,7 @@
                         <p class="SNSID">{{ instaID }}</p>
                     </a>
                 </p>
-                <p class="SNSName"  v-if="twitterIDUrl">
+                <p class="SNSName" v-if="twitterIDUrl">
                     <a :href="twitterIDUrl" @click="redirectToTrl(twitterIDUrl)" target="_blank">
                         <img src="~/assets/img/base/twitter.png" class="icon">
                         <p class="SNSID">{{ twitterID }}</p>
@@ -35,24 +39,30 @@
         </div>
     </div>
 </template>
-  
+
 <script>
 export default {
-  props: {
-    performerName: String,
-    performerNameFontsize: Number,
-    kikakuName: String,
-    kikakuNameUrl: String,
-    mogitenName: String,
-    mogitenNameUrl: String,
-    instaID: String,
-    instaIDUrl: String,
-    twitterID: String,
-    twitterIDUrl: String
-  }
+    props: {
+        performerName: String,
+        performerNameFontsize: Number,
+        kikakuList: {
+            type: Array,
+            default: () => []
+        },
+        mogitenList: {
+            type: Array,
+            default: () => []
+        },
+        instaID: String,
+        instaIDUrl: String,
+        twitterID: String,
+        twitterIDUrl: String
+    },
+    methods: {
+    }
 };
 </script>
-  
+
 <style scoped lang="scss">
 a {
     color: inherit;
@@ -71,7 +81,6 @@ p {
     width: 342px;
     flex-direction: column;
     align-items: center;
-
     border-radius: 8px;
     border: 1px solid $primary-color;
     background: $quaternary-color;
@@ -83,7 +92,6 @@ p {
     justify-content: center;
     align-items: center;
     align-self: stretch;
-
     border-radius: 8px 8px 0px 0px;
     background: $primary-color;
 }
@@ -113,22 +121,11 @@ p {
     align-items: flex-start;
 }
 
-.kikakuName {
-    width: 264px;
-    height: 27px;
-
-    font-size: 15px;
-    font-family: map-get($font-styles, family);
-    font-style: map-get($font-styles, style);
-    font-weight: map-get($font-styles, weight);
-    line-height: map-get($font-styles, line-height);
-}
-
+.kikakuName,
 .mogitenName {
     width: 264px;
-    height: 0;
+    height: 27px;
     font-size: 15px;
-
     font-family: map-get($font-styles, family);
     font-style: map-get($font-styles, style);
     font-weight: map-get($font-styles, weight);
@@ -140,6 +137,7 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    align-items: flex-start;
 }
 
 .SNSName {
@@ -152,7 +150,6 @@ p {
 .SNSID {
     text-align: center;
     font-size: 15px;
-    
     font-family: map-get($font-styles, family);
     font-style: map-get($font-styles, style);
     font-weight: map-get($font-styles, weight);
@@ -163,6 +160,4 @@ p {
     width: 30px;
     height: 30px;
 }
-
 </style>
-    

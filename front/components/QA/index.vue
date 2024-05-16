@@ -34,6 +34,7 @@ export default {
     line-height: map-get($font-styles, line-height);
     font-family: map-get($font-styles, family);
     font-size: 20px;
+    margin: 0px;
 }
 .QAabout {
     background-color: $primary-color;

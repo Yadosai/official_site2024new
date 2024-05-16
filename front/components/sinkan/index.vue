@@ -35,7 +35,7 @@
     font-weight: map-get($font-styles, weight);
     line-height: map-get($font-styles, line-height);
     color: #000;
-    font-size: 20px;
+    font-size: 24px;
     margin: 0px;
 }
 

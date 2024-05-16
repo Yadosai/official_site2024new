@@ -11,13 +11,13 @@
                 <p class="group">{{ holder }}</p>
                 <div class="placeDateContainer">
                     <a href="kikaku#map" class="place">
-                        <img src="~\assets\img\kikaku\place.png">
+                        <img src="~\assets\img\common\place.png">
                         <div class="dateContainer">
                             <p v-for="(place, index) in places" :key="index" class="placeS">{{ place }}</p>
                         </div>
                     </a>
                     <a href="kikaku#timeTable" class="date">
-                        <img src="~assets/img/mogiten/calendar.png">
+                        <img src="~assets/img/common/calendar.png">
                         <div class="dateContainer">
                             <p v-for="(date, index) in dates" :key="index" class="dateS">{{ date }}</p>
                         </div>
@@ -203,8 +203,9 @@ section {
 }
 
 .place img {
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
 
 .placeS {
@@ -228,8 +229,9 @@ section {
 }
 
 .date img {
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
 
 .dateContainer {

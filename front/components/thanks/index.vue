@@ -1,6 +1,6 @@
 <template>
     <div class="thanksEyeCatch">
-        <p>協賛団体</p>
+        <p class="thanksEyeCatchTitle">協賛団体</p>
         <div class="thanksabout">
             <p>やどかり祭は地域のたくさんの企業や団体からの支援金で成り立っております。</p><p>委員一同、毎年のご支援に深く感謝申し上げます。</p><p>この一覧の中には筑波大生が生活の中でも大変お世話になっているところもあります。新入生はぜひ足を運んでみてください。</p>
         </div>
@@ -118,14 +118,16 @@ export default {
     align-items: center;
     background-color: $quaternary-color;
 }
-.thanksEyeCatch p {
+
+.thanksEyeCatchTitle {
     font-style: map-get($font-styles, style);
     font-weight: map-get($font-styles, weight);
     line-height: map-get($font-styles, line-height);
     font-family: map-get($font-styles, family);
-    font-size: 40px;
+    font-size: 24px;
     margin: 0;
 }
+
 .thanksabout {
     background-color: $primary-color;
     width: fit-content;
@@ -178,5 +180,12 @@ export default {
     width: fit-content;
     margin: 0;
 }
+
+@media (min-width: 950px) {
+    .thanksEyeCatchTitle {
+        font-size: 40px;
+    }
+}
+
 </style>
   

@@ -15,6 +15,7 @@
             <span>銀の豚</span>
             <span>つくば青年会議所</span>
             <span>つくば電気空調株式会社</span>
+            <span>小山商会</span>
             <span>香陵住販株式会社</span>
             <span>トクハシ（メガネ パリミキ）</span>
             <span>SALON DES CENT</span>
@@ -22,6 +23,7 @@
             <span>プラス1カフェガーデン</span>
             <span>飯岡医院</span>
             <span>大成不動産株式会社</span>
+            <span>春日歯科医院</span>
             <span>有限会社岩崎電機</span>
             <span>どら焼き専門店 志ち乃</span>
             <span>PROGRESS</span>
@@ -30,10 +32,10 @@
             <span>定越食堂</span>
             <span>スタジオソングサイクル</span>
             <span>suplis hair design</span>
-            <span>レストラン 夢屋</span>
-            <span>平砂理容室</span>
         </div>
         <div class="miniCon">
+            <span>レストラン 夢屋</span>
+            <span>平砂理容室</span>
             <span>株式会社秀和不動産</span>
             <span>ばほばほ</span>
             <span>北方園</span>
@@ -44,6 +46,7 @@
             <span>びすとろ椿々 追越店</span>
             <span>naked bar</span>
             <span>セブンイレブンつくば松見公園店</span>
+            <span>MUSIC PLANT</span>
             <span>桜ヶ丘歯科センター</span>
             <span>うなぎ松乃家</span>
             <span>(有)細田金物店</span>
@@ -51,11 +54,11 @@
             <span>印晶堂</span>
             <span>かつ大</span>
             <span>灯禾軒</span>
+        </div>
+        <div class="miniCon">
             <span>Lagoon</span>
             <span>菱光建設株式会社</span>
             <span>プリムローズ</span>
-        </div>
-        <div class="miniCon">
             <span>一誠商事</span>
             <span>肉のいなげや</span>
             <span>Layout9</span>
@@ -73,11 +76,11 @@
             <span>あじ彩</span>
             <span>なごみ処きりん</span>
             <span>ファミリーマートつくば葛城店</span>
+        </div>
+        <div class="miniCon">
             <span>ガーリーショット</span>
             <span>カラオケボイス</span>
             <span>Cruise</span>
-        </div>
-        <div class="miniCon">
             <span>ル・パン グリ・グリ</span>
             <span>おふくろさん弁当</span>
             <span>Cafe4</span>

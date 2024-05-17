@@ -7,7 +7,7 @@
     </div>
     <div class="QAcontainer">
         <item question="開催日はいつですか？" answer="今年度は5月31日が前夜祭で6月1日が本祭になっております" />
-        <item question="パンフレットはありますか？" answer="当日案内所で配布しております。また、コチラからDLも可能です" />
+        <item question="パンフレットはありますか？" answer="当日案内所で配布しております。" linkText="またはコチラからダウンロードできます。" />
         <item question="落とし物の問い合わせはどこにすればよいですか" answer="祭りの間は案内所で保管しておりますのでお越しください。祭りの落とし物に気づいた際にはyadokari.otoshimono50@gmail.comまでご連絡ください。" />
     </div>
 </template>

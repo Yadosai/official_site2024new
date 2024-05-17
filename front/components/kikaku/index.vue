@@ -108,7 +108,7 @@ export default {
                     { id: 7, stageId: 5, kikakuName: 'ストリートパフォーマンス(アカペラサークルDoo-Wop)', kikakuStart: '13:10', kikakuEnd: '14:10' },
                     { id: 7, stageId: 5, kikakuName: 'ストリートパフォーマンス(津軽三味線倶楽部無絃塾)', kikakuStart: '14:20', kikakuEnd: '15:20' },
                     { id: 4, stageId: 6, kikakuName: '神輿(ときめき太鼓塾)', kikakuStart: '15:45', kikakuEnd: '16:10' },
-                    { id: 4, stageId: 6, kikakuName: '御輿(パフォーマンス・練り歩き)', kikakuStart: '16:50', kikakuEnd: '15:45' },
+                    { id: 4, stageId: 6, kikakuName: '御輿(パフォーマンス・練り歩き)', kikakuStart: '16:50', kikakuEnd: '18:10' },
                     { id: 4, stageId: 4, kikakuName: '御輿(展示)', kikakuStart: '9:30', kikakuEnd: '15:45' },
                     { id: 1, stageId: 1, kikakuName: 'ゆかコン', kikakuStart: '18:45', kikakuEnd: '20:15' },
                     { id: 1, stageId: 1, kikakuName: 'ゆかコン(表彰式)', kikakuStart: '20:30', kikakuEnd: '21:00' },

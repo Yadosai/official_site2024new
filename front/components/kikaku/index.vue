@@ -31,29 +31,29 @@
     </div>
 
     <div class="kikakuItemList">
-        <item kikakuID="1" title="ゆかたコンテスト" imgUrl="/img/kikaku/yukacon.jpg" holder="一年生向け企画" :places="['メインステージ']":dates="['6月1日：18:45～21:00']"
+        <item kikakuID="1" title="ゆかたコンテスト" imgUrl="/img/kikaku/yukacon.jpg" holder="一年生・有志" :places="['メインステージ']":dates="['6月1日：18:45～21:00']"
             description="やどかり祭を最高に盛り上げるメイン企画。各チームが個性的なパフォーマンスで観客の皆さんを魅了し優勝を目指します。ゆかたを着た出演者を中心としたチーム一丸となってのパフォーマンスは必見です。" />
-        <item kikakuID="2" title="火文字前パフォ・火文字" imgUrl="/img/kikaku/himoji.jpg" holder="全体装飾部局" :places="['平砂宿舎共用等前']" :dates='["5月31日：20:00～20:20","6月1日：20:00～21:20"]'
+        <item kikakuID="2" title="火文字前パフォ・火文字" imgUrl="/img/kikaku/himoji.jpg" holder="全体装飾部局" :places="['平砂宿舎共用等前']" :dates='["5月31日：20:00～21:30"]'
             description="委員による幻想的な火文字。例年漢字一文字に火を灯しますが、今年は何になるのでしょうか。そしてその直前に行われる筑波大学の団体によるパフォーマンスも見逃せません。" />
         <item kikakuID="3" title="野外ライブ" imgUrl="/img/kikaku/live.jpg" holder="有志・サークル" :places="['メインステージ']" :dates='["5月31日：16:30～20:40"]'
             description="筑波大学のバンドサークルから出演者を集めて、ライブパフォーマンスを行ってもらう前夜祭の激アツ企画です。皆様が楽しめること間違いなしです。ぜひご来場ください。" />
-        <item kikakuID="4" title="御輿" imgUrl="/img/kikaku/mikosi.jpg" holder="一年生向け企画" :places="['平砂宿舎共用等前','メインストリート']" :dates='["6月1日：9:30～15:45"]'
+        <item kikakuID="4" title="御輿" imgUrl="/img/kikaku/mikosi.jpg" holder="一年生" :places="['平砂宿舎共用等前','メインストリート']" :dates='["6月1日：15:45～18:10"]'
             description="祭といえば、やっぱり御輿。御輿が会場のメインストリートを縦断する迫力満点の練り歩きと趣向を凝らしたパフォーマンスは必見です。" />
         <item kikakuID="5" title="やどかりダンス" imgUrl="/img/kikaku/dance.jpg" holder="有志・サークル" :places="['メインステージ']" :dates='["6月1日：13:15～16:10"]'
             description="筑波大学のダンス系サークルや部活がパフォーマンスをする企画です。それぞれの団体が独自のパフォーマンスを通じて表現し、団体それぞれに違った色をみることができます。ぜひ会場まで足を運んでみてください。" />
         <item kikakuID="6" title="ミニステージパフォーマンス" imgUrl="/img/kikaku/stage.jpg" holder="有志・サークル" :places="['平砂宿舎4・6号棟間']" 
-            :dates='["5月31日：18:00～19:50","6月1日：12:00～15:30"]'
+            :dates='["5月31日：18:00～19:50","6月1日：12:00～16:30"]'
             description="筑波大学の団体がミニステージで演奏・パフォーマンスをする企画です。お気軽にお立ち寄りください。" />
         <item kikakuID="7" title="ストリートパフォーマンス" imgUrl="/img/kikaku/street.jpg" holder="有志・サークル" :places="['平砂共用等前交差点','メインストリート']" 
             :dates='["6月1日：13:10～15:20"]'
             description="筑波大学の団体がストリート上で演奏・パフォーマンスをする企画です。お気軽にお立ち寄りください。" />
-        <item kikakuID="8" title="やどカラ" imgUrl="/img/kikaku/noImg.jpg" holder="一年生向け企画" :places="['メインストリート']" :dates='["6月1日：16:10～16:40"]'
+        <item kikakuID="8" title="やどカラ" imgUrl="/img/kikaku/noImg.jpg" holder="有志" :places="['メインストリート']" :dates='["6月1日：16:10～16:40"]'
             description="やどカラは5年ぶりの復活！参加者が歌を歌ってその出来を競う企画です。御輿の前にやどカラを見て気持ちを盛り上げましょう。" />
-        <item kikakuID="9" title="縁日" imgUrl="/img/kikaku/enniti.jpg" holder="一年生向け企画" :places="['メインステージ横']"  :dates='["5月31日：17:00～20:40","6月1日：11:10～16:45"]'
+        <item kikakuID="9" title="縁日" imgUrl="/img/kikaku/enniti.jpg" holder="企画部局" :places="['メインステージ横']"  :dates='["5月31日：17:00～20:40","6月1日：11:10～20:30"]'
             description="縁日は巨大だるま落としや、射的などで遊べる企画です。お祭りらしいエリアになっているのでぜひ楽しんでいってください。" />
-        <item kikakuID="10" title="本祭OP" imgUrl="/img/kikaku/OP.jpg" holder="一年生向け企画" :places="['メインステージ']"  :dates='["6月1日：11:07～13:30"]'
-            description="本祭オープニングでは筑波大学のサークルがやどかり祭本祭のの開幕を盛り上げてくれます。みんなで祭の開幕をむかえましょう。" />
-        <item kikakuID="11" title="50周年企画" imgUrl="/img/kikaku/noImg.jpg" holder="一年生向け企画" :places="['メインステージ']"  :dates='["6月1日：16:40～16:50"]'
+        <item kikakuID="10" title="本祭OP" imgUrl="/img/kikaku/OP.jpg" holder="有志・サークル" :places="['メインステージ']"  :dates='["6月1日：11:05～12:02"]'
+            description="本祭オープニングでは筑波大学のサークルがやどかり祭本祭の開幕を盛り上げてくれます。みんなで祭の開幕をむかえましょう。" />
+        <item kikakuID="11" title="50周年企画" imgUrl="/img/kikaku/noImg.jpg" holder="実行委員" :places="['メインステージ']"  :dates='["6月1日：16:40～16:50"]'
             description="今年は宿舎祭50周年を記念して「神成ダービー」を行います。委員によるパフォ－マンスをどうぞご覧ください！" />
     </div>
 

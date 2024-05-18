@@ -90,9 +90,7 @@ export default {
                     { id: 2, stageId: 4, kikakuName: '火文字', kikakuStart: '21:10', kikakuEnd: '21:30' },
                 ],
                 honsai: [
-                    { id: 10, stageId: 1, kikakuName: '本祭OP(津軽三味線倶楽部無絃塾)', kikakuStart: '11:07', kikakuEnd: '11:22' },
-                    { id: 10, stageId: 1, kikakuName: '本祭OP(筑波大学ときめき太鼓塾)', kikakuStart: '11:22', kikakuEnd: '11:37' },
-                    { id: 10, stageId: 1, kikakuName: '本祭OP(応援部WINS)', kikakuStart: '11:37', kikakuEnd: '12:00' },
+                    { id: 10, stageId: 1, kikakuName: '本祭OP', kikakuStart: '11:05', kikakuEnd: '12:02' },
                     { id: 5, stageId: 1, kikakuName: 'ダンス(筑波大学アイドル研究会Bombs!)', kikakuStart: '13:15', kikakuEnd: '13:40' },
                     { id: 5, stageId: 1, kikakuName: 'ダンス(筑波大学ダブルダッチサークルpurpleme)', kikakuStart: '13:40', kikakuEnd: '14:05' },
                     { id: 5, stageId: 1, kikakuName: 'ダンス(ひらがなつくば)', kikakuStart: '14:05', kikakuEnd: '14:30' },

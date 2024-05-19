@@ -44,7 +44,7 @@
         <item kikakuID="6" title="ミニステージパフォーマンス" imgUrl="/img/kikaku/stage.jpg" holder="有志・サークル" :places="['平砂宿舎4・6号棟間']" 
             :dates='["5月31日：18:00～19:50","6月1日：12:00～16:30"]'
             description="筑波大学の団体がミニステージで演奏・パフォーマンスをする企画です。お気軽にお立ち寄りください。" />
-        <item kikakuID="7" title="ストリートパフォーマンス" imgUrl="/img/kikaku/street.jpg" holder="有志・サークル" :places="['平砂共用等前交差点','メインストリート']" 
+        <item kikakuID="7" title="ストリートパフォーマンス" imgUrl="/img/kikaku/street.jpg" holder="有志・サークル" :places="['平砂共用等前交差点']" 
             :dates='["6月1日：13:10～15:20"]'
             description="筑波大学の団体がストリート上で演奏・パフォーマンスをする企画です。お気軽にお立ち寄りください。" />
         <item kikakuID="8" title="やどカラ" imgUrl="/img/kikaku/noImg.jpg" holder="有志" :places="['メインストリート']" :dates='["6月1日：16:10～16:40"]'
@@ -107,9 +107,9 @@ export default {
                     { id: 7, stageId: 5, kikakuName: 'ストリートパフォーマンス(津軽三味線倶楽部無絃塾)', kikakuStart: '14:20', kikakuEnd: '15:20' },
                     { id: 4, stageId: 6, kikakuName: '神輿(ときめき太鼓塾)', kikakuStart: '15:45', kikakuEnd: '16:10' },
                     { id: 4, stageId: 6, kikakuName: '御輿(パフォーマンス・練り歩き)', kikakuStart: '16:50', kikakuEnd: '18:10' },
-                    { id: 4, stageId: 4, kikakuName: '御輿(展示)', kikakuStart: '9:30', kikakuEnd: '15:45' },
+                    { id: 4, stageId: 4, kikakuName: '御輿(展示)', kikakuStart: '9:30', kikakuEnd: '15:40' },
                     { id: 1, stageId: 1, kikakuName: 'ゆかコン', kikakuStart: '18:45', kikakuEnd: '20:15' },
-                    { id: 1, stageId: 1, kikakuName: 'ゆかコン(表彰式)', kikakuStart: '20:30', kikakuEnd: '21:00' },
+                    { id: 1, stageId: 1, kikakuName: '表彰式', kikakuStart: '20:15', kikakuEnd: '21:00' },
                     { id: 11, stageId: 1, kikakuName: '50周年企画', kikakuStart: '16:40', kikakuEnd: '16:50' },
                     { id: 8, stageId: 6, kikakuName: 'やどカラ', kikakuStart: '16:10', kikakuEnd: '16:40' },
                     { id: 9, stageId: 2, kikakuName: '縁日', kikakuStart: '11:10', kikakuEnd: '20:30' },

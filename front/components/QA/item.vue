@@ -14,6 +14,11 @@
             </div>
             <div class="a-text">{{ answer }}</div>
         </div>
+        <div class="link">
+            <a href="pdf/50th pamphlet.pdf">
+                <div class="q-link">{{ linkText }}</div>
+            </a>
+        </div>
     </div>
 </template>
   
@@ -21,7 +26,8 @@
 export default {
     props: {
         question: String,
-        answer: String
+        answer: String,
+        linkText: String,
     }
 }
 </script>
@@ -41,9 +47,23 @@ export default {
     display: flex;
     margin-bottom: 10px;
 }
+.q-link {
+    font-style: map-get($font-styles, style);
+    font-weight: map-get($font-styles, weight);
+    line-height: map-get($font-styles, line-height);
+    font-family: map-get($font-styles, family);
+    color: $tertiary-color;
+    text-decoration: underline;
+}
 .answer {
     width: 330px;
     display: flex;
+}
+
+.link {
+    width: 330px;
+    display: flex;
+    justify-content: center;
 }
 .q-mark {
     width: 40px;
@@ -109,6 +129,8 @@ export default {
     line-height: map-get($font-styles, line-height);
     font-family: map-get($font-styles, family);
 }
+
+
 .circle {
     width: 36px;
     height: 36px;

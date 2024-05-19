@@ -4,7 +4,7 @@
     </div>
     <div id="otherContainer">
         <item itemTitle="クラウドファンディング" :item-contents="[
-            { text: '期間　(~6月1日 12:00)', href: '' },
+            { text: '期間　~6月1日 12:00', href: '' },
             { text: '概要　やどかり祭開催の為の寄付です', href: '' },
             { text: 'URL:https://readyfor.jp/projects/50-yadosai', href: 'https://readyfor.jp/projects/50-yadosai' }
         ]" item-font-size="18px" />
@@ -12,6 +12,10 @@
             { text: 'サービス開始　2024年4月', href: '' },
             { text: '概要　地域密着型に徹することでお店とヒトを繋ぐ、古いタイプの新しいSNSサービスです。', href: '' },
             { text: 'URL:https://www.tsukuba-info.com/', href: 'https://www.tsukuba-info.com/' }
+        ]" item-font-size="18px" />
+        <item itemTitle="取材について" :item-contents="[
+            { text: '取材については、下からダウンロードしていただき注意事項の確認お願いします。', href: '' },
+            { text: '〇取材についてのご案内はコチラ〇', href: 'pdf/pressRelease.pdf' }
         ]" item-font-size="18px" />
     </div>
 </template>

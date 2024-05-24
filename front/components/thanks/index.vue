@@ -148,7 +148,7 @@ export default {
 }
 .bigsponsorContainer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: row;
     margin: 0;
 }

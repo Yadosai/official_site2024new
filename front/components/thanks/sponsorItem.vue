@@ -1,11 +1,9 @@
 <template>
     <div class="sponsor">
         <a :href="sponsorUrl" target="_blank" class="no-underline">
-            <center>
                 <div class="sponsor-logo-container">
                     <img :src=sponsorLogoUrl :alt="'sponsor Logo'" class="sponsor-logo"/>
                 </div>
-            </center>
             <div class="sponsor-descript">{{ sponsorDescript }}</div>
         </a>
     </div>
@@ -23,24 +21,19 @@ export default {
   
 <style lang="scss">
 .sponsor {
-    height: 160px;
-    width: 100%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: $secondary-color;
 }
 
-.sponsor-logo-container {
-    width: 101px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-}
 
 .sponsor-logo {
-    max-height: 100%;
-    object-fit: contain; /* アスペクト比を保ちながら最大限に表示 */
+    height: auto;
+    width: 150px;
 }
 
 .sponsor-descript {

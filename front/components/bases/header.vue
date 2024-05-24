@@ -14,7 +14,7 @@
         <nav class="sm" v-if="isMenuOpen">
             <ul>
                 <li>
-                    <NuxtLink to="/top" class="menuItem" @click.native="closeMenu">ホーム</NuxtLink>
+                    <NuxtLink to="/" class="menuItem" @click.native="closeMenu">ホーム</NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="/mogiten" class="menuItem" @click.native="closeMenu">模擬店</NuxtLink>
@@ -45,7 +45,7 @@
         <nav class="pc">
             <ul>
                 <li>
-                    <a href="/top" class="menuItem" @click.native="closeMenu">ホーム</a>
+                    <a href="/" class="menuItem" @click.native="closeMenu">ホーム</a>
                 </li>
                 <li>
                     <NuxtLink to="/mogiten" class="menuItem" @click.native="closeMenu">模擬店</NuxtLink>

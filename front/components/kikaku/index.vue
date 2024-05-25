@@ -109,7 +109,7 @@ export default {
                     { id: 4, stageId: 6, kikakuName: '御輿(パフォーマンス・練り歩き)', kikakuStart: '16:50', kikakuEnd: '18:10' },
                     { id: 4, stageId: 4, kikakuName: '御輿(展示)', kikakuStart: '9:30', kikakuEnd: '15:40' },
                     { id: 1, stageId: 1, kikakuName: 'ゆかコン', kikakuStart: '18:45', kikakuEnd: '20:15' },
-                    { id: 1, stageId: 1, kikakuName: '表彰式', kikakuStart: '20:15', kikakuEnd: '21:00' },
+                    { id: 1, stageId: 1, kikakuName: '表彰式', kikakuStart: '20:05', kikakuEnd: '21:00' },
                     { id: 11, stageId: 1, kikakuName: '50周年企画', kikakuStart: '16:40', kikakuEnd: '16:50' },
                     { id: 8, stageId: 6, kikakuName: 'やどカラ', kikakuStart: '16:10', kikakuEnd: '16:40' },
                     { id: 9, stageId: 2, kikakuName: '縁日', kikakuStart: '11:10', kikakuEnd: '20:30' },

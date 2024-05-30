@@ -93,7 +93,7 @@
         <item  mogitenName="たい焼きやいた" mogitenFontSize="24px" organizationName="工学システム学類1年1.2クラス"
             mogitenIntroduction="筑波大理工学生が作る美味しいたい焼きです。一緒に販売しているレモネードもどうぞ!" mogitenId="50"
             holdingTime_1="両日" holdingTime_2="" />
-        <item  mogitenName="クレープ三四郎" mogitenFontSize="24px" organizationName="工学システム学類1年3.4クラス"
+        <item  mogitenName="幸せのクレープ" mogitenFontSize="24px" organizationName="工学システム学類1年3.4クラス"
             mogitenIntroduction="お馴染みのクレープに加えて抹茶を練りこんだ和風クレープも提供します。　奥ゆかしい風味をお試しあれ！" mogitenId="2"
             holdingTime_1="両日" holdingTime_2="" />
         <item  mogitenName="Wrapped Happy" mogitenFontSize="24px" organizationName="応用理工学類1年"
@@ -117,7 +117,7 @@
         <item  mogitenName="落合カレー" mogitenFontSize="24px" organizationName="情報メディア創成学類1年"
             mogitenIntroduction="落合陽一先生公認！米とカレーを一体化させ、ストローで楽しむ革新的な逸品。その美味しさを共有しよう！" mogitenId="10"
             holdingTime_1="両日" holdingTime_2="" />
-        <item  mogitenName="KLiSweets" mogitenFontSize="24px" organizationName="知識情報図書館学類1年1.2クラス"
+        <item  mogitenName="KLiSweets" mogitenFontSize="24px" organizationName="知識情報・図書館学類1年1.2クラス"
             mogitenIntroduction="やれやれ、僕だって暑くてたまらないさ つまりさ、僕はきみのために初夏のスイーツを作ったってわけなんだ" mogitenId="41"
             holdingTime_1="両日" holdingTime_2="" />
         <item  mogitenName="ヤドカリ輪っしょい" mogitenFontSize="24px" organizationName="医学類1年1.6クラス"

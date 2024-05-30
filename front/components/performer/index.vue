@@ -8,7 +8,7 @@
       :kikakuList="[{ name: 'やどかりダンス (6月1日 13:15~)', url: '/kikaku#5' }]"
       :mogitenList="[{ name: '模擬店ID3', url: '/mogiten#3' }]" instaID="@bombs_tkb"
       instaIDUrl="http://instagram.com/bombs_tkb" twitterID="@bombs_tkb" twitterIDUrl="http://twitter.com/bombs_tkb" />
-    <item performerName="筑波大学ダブルダッチサークル purpleme" performerNameFontsize="20"
+    <item performerName="筑波大学ダブルダッチサークル purplume" performerNameFontsize="20"
       :kikakuList="[{ name: 'やどかりダンス (6月1日 13:40~)', url: 'https://yadokarisai.com/kikaku' }]" :mogitenList="[]"
       instaID="@purplume.dd" instaIDUrl="http://instagram.com/purplume.dd" twitterID="@purplume_"
       twitterIDUrl="http://twitter.com/purplume_" />

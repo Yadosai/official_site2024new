@@ -13,6 +13,10 @@
             { text: '概要　地域密着型に徹することでお店とヒトを繋ぐ、古いタイプの新しいSNSサービスです。', href: '' },
             { text: 'URL:https://www.tsukuba-info.com/', href: 'https://www.tsukuba-info.com/' }
         ]" item-font-size="18px" />
+        <item itemTitle="ACCS出演！" :item-contents="[
+            { text: 'つくばのケーブルテレビACCSに出演しました！', href: '' },
+            { text: '〇動画はコチラ〇', href: 'https://youtu.be/4PKsq_vEPwU?si=12TzG9ogkHz1nxQm' }
+        ]" item-font-size="18px" />
         <item itemTitle="取材について" :item-contents="[
             { text: '取材については、下からダウンロードしていただき注意事項の確認お願いします。', href: '' },
             { text: '〇取材についてのご案内はコチラ〇', href: 'pdf/pressRelease.pdf' }

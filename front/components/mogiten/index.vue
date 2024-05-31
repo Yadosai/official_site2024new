@@ -25,7 +25,7 @@
             mogitenIntroduction="私たちの進路のように変幻自在に選べるトッピングと味と作り方をぜひご賞味あれ！" mogitenId="8"
             holdingTime_1="両日" holdingTime_2="" />
         <item  mogitenName="スペシャルたこせん" mogitenFontSize="24px" organizationName="総合学域群第3類1.2クラス"
-            mogitenIntroduction="たこ焼き２個入りのたこせんです！たこ焼きの中身はタコまたはチーズ＆ウインナーで選べます。タコが苦手な方でも安心です。ぜひ食べに来てください！" mogitenId="1"
+            mogitenIntroduction="たこ焼き２個入りのたこせんです！たこ焼きの中身はタコまたはチーズ＆ウインナーで選べます。タコが苦手な方でも安心です。ぜひ食べに来てください！" mogitenId="7"
             holdingTime_1="両日" holdingTime_2="" />
         <item  mogitenName="冷麺屋さん" mogitenFontSize="24px" organizationName="総合学域群第3類3.4クラス"
             mogitenIntroduction="今までに前例のない冷麵専門店オープン！ツルッとさっぱりここで一息！やど祭の〆にご賞味あれ！" mogitenId="31"
@@ -187,7 +187,7 @@
             mogitenIntroduction="iGEM TSUKUBAは｢iGEM｣という合成生物学の世界大会に出場する研究サークルです！！" mogitenId="14"
             holdingTime_1="両日" holdingTime_2="" />
         <item  mogitenName="広島県人会お好み焼き" mogitenFontSize="24px" organizationName="広島県人会"
-            mogitenIntroduction="広島にゆかりのある筑波大生により構成された、地元愛で繋がる人の和として約50年間の歴史をもつ団体です！" mogitenId="7"
+            mogitenIntroduction="広島にゆかりのある筑波大生により構成された、地元愛で繋がる人の和として約50年間の歴史をもつ団体です！" mogitenId="1"
             holdingTime_1="両日" holdingTime_2="" />
         <item  mogitenName="蓮・SEN" mogitenFontSize="24px" organizationName="筑波大学ベトナム留学生会"
             mogitenIntroduction="焼きフォーの香りを味わおう！ピーチティーと蓮茶もあります！" mogitenId="24"

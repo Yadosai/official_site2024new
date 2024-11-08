@@ -1,7 +1,7 @@
 <template>
     <!-- <h1>フッター</h1> -->
     <!-- <div id="footer" :class="{topPageFooter: route.path == '/top'}"> -->
-    <div :id="$route.path === '/top' ? 'darkFooter' : 'footer'">
+    <div :id="$route.path === '/' ? 'darkFooter' : 'footer'">
         <ul class="footerSNSContainer">
             <li class="snsItem">
                 <a href="https://www.instagram.com/yadokari_sai/" target="_blank" class="snsLink">
